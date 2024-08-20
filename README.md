@@ -15,6 +15,7 @@ I made this for my personal website, as I really only needed simple animations a
 
 ## 🏗️ Installation
 **1. Link CSS and JS in your project**
+
 Add the following code in the `<head>` element:
 ``` HTML
 <link rel="stylesheet" src="">
@@ -31,6 +32,7 @@ Add the following code in the `<head>` element:
 *For a more detailed overview of available classes, see **Configuration**.*
 
 **4. Change settings to suit your preferences**
+
 This library comes with a few settings to tweak to your liking, which you change by editing CSS variables inside the document `:root`. You can copy the following code inside your CSS should you want to change any values. ==You do not need to change any of these values if you don't want to.==
 ``` CSS
 :root {
@@ -87,12 +89,12 @@ A more detailed description of the available settings can be seen in **Configura
 - `bottom-to-top`
 
 ### Available Classes
-`animate`: Makes an element be animatable. This is mandatory for every element that is to be animated.
-`name-of-animation`: Type of animation which should display on scroll, see **Animation types**.
-`once / always`: If the animation should play once or every time it enters the viewport
-`staggered`: Used on lists of elements, such as cards, buttons, menu items etc.
-`delay100-1000`: custom delay for when the animation should play
-`duration100-1000`: custom duration amount for how long the animation should play for.
+- `animate`: Makes an element be animatable. This is mandatory for every element that is to be animated.
+- `name-of-animation`: Type of animation which should display on scroll, see **Animation types**.
+- `once / always`: If the animation should play once or every time it enters the viewport
+- `staggered`: Used on lists of elements, such as cards, buttons, menu items etc.
+- `delay100-1000`: custom delay for when the animation should play
+- `duration100-1000`: custom duration amount for how long the animation should play for.
 
 ## 🌳 Examples
 ### Website hero section 
