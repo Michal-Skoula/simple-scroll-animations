@@ -14,23 +14,23 @@ I made this for my personal website, as I really only needed simple animations a
 - Bundle size of 3.2kB
 
 ## 🏗️ Installation
-### 1. Link CSS and JS in your project**
+### 1. Link CSS and JS in your project
 Add the following code in the `<head>` element:
 ``` HTML
 <link rel="stylesheet" src="">
 <script defer src="">
 ``` 
-### 2. Add `animate` class to elements you want to animate**
+### 2. Add `animate` class to elements you want to animate
 ``` HTML
 <h1 class="animate">This is now animated!</h1>
 ```
-### 3. Add aditional classes to modify the behaviour**
+### 3. Add aditional classes to modify the behaviour
 ``` HTML
 <h1 class="animate once left-to-right delay100">Left to right animation with a delay</h1>
 ```
 *For a more detailed overview of available classes, see **Configuration**.*
 
-### 4. Change settings to suit your preferences**
+### 4. Change settings to suit your preferences
 This library comes with a few settings to tweak to your liking, which you change by editing CSS variables inside the document `:root`. You can copy the following code inside your CSS should you want to change any values. ==You do not need to change any of these values if you don't want to.==
 ``` CSS
 :root {
