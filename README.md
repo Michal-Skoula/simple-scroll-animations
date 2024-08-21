@@ -1,5 +1,5 @@
 # Simple scroll animations
-![Showcase video](showcase.gif)
+![Showcase video](videos/showcase.gif)
 
 - 🌐 [Demo website](https://michal-skoula.github.io/simple-scroll-animations)
 - 🔗 [My WIP personal website using this library](https://michal-skoula.github.io/website)
@@ -106,15 +106,67 @@ If your element has animations and transitions on it already, this library may n
 - `duration100-1000` - Set a custom duration for how long the animation should play for.
 
 ## 🌳 Examples
-### Website hero section 
+### Different directions
+![Directions](videos/directions.gif)
 ``` HTML
-<h1 class="animate fade-in staggered">This library is stupid easy to use.</h1>
-<p class="animate fade-in staggered">Just add a couple of classes which mostly read like english and that's it!</p>
-<a class="animate fade-in staggered">Read more</a>
-<img class="animate bottom-to-top delay300"> 
+<h2 class="animate delay200">All cardinal directions!</h2>
+<div class="flex-container">
+  <div class="block animate left-to-right"></div>
+  <div class="block animate top-to-bottom"></div>
+  <div class="block animate bottom-to-top"></div>
+  <div class="block animate right-to-left"></div>
+</div>
+<div class="animate fade-in delay300 column">
+  <a href="#cards-showcase" class="button">See more: Cards</a>
+  <a href="#hero">Go back</a>
+</div>
 ```
-### Cards
+---
+### Staggered elements (cards or lists)
+![Staggered](videos/staggered.gif)
 ``` HTML
-
+<h2 class="animate delay200">Sick staggered cards with one class</h2>
+<div class="flex-container">
+  <div class="block animate left-to-right staggered"></div>
+  <div class="block animate left-to-right staggered"></div>
+  <div class="block animate left-to-right staggered"></div>
+  <div class="block animate left-to-right staggered"></div>
+</div>
+<div class="animate fade-in delay400 column">
+  <a href=""></a>
+  <a href="#delay-showcase" class="button">See more: Setting a delay</a>
+  <a href="#side-to-side-showcase">Go back</a>
+</div> 
 ```
-
+---
+### Delayed animations
+![Delayed](videos/delay.gif)
+``` HTML
+<h2 class="animate">Easily set a delay</h2>
+<div class="flex-container delay-grid">
+  <span class="animate delay100">You</span>
+  <span class="animate delay500">just</span>
+  <span class="animate delay300">set</span>
+  <span class="animate delay200">a</span>
+  <span class="animate delay700">value</span>
+  <span class="animate delay600">from</span>
+  <span class="animate delay900">100</span>
+  <span class="animate delay400">to</span>
+  <span class="animate delay1000">1000</span>
+</div>
+<div class="animate fade-in delay100 column">
+  <a href="#duration-showcase" class="button">See more: Setting a duration</a>
+  <a href="#cards-showcase">Go back</a>
+</div> 
+```
+---
+### Long and short animations
+![Duration](videos/duration.gif)
+``` HTML
+<h2 class="animate">Set an animation duration</h2>
+<p>Your animation can be as <span class="animate bottom-to-top delay300 duration100">short</span> or as <span class="animate top-to-bottom delay400 duration1000">long</span> as you'd like</p>
+<div class="animate fade-in delay100 column">
+  <a href="#installation" class="button">Installation</a>
+  <a href="#delay-showcase">Go back</a>
+</div> 
+```
