@@ -76,10 +76,6 @@ If your element has animations and transitions on it already, this library may n
   /* Equation is: calc(var(--staggered-step-amount) * var(--duration)); */
   --staggered-step-amount:250ms;
 
-  /* For duration100-1000, what the step values should be.  */
-  /* For a value of 200ms, duration200 = 400ms, duration300 = 600ms and so on.  */
-  /* Equation is: calc(var(--staggered-step-amount) * var(--duration)); */
-
   /* Sets the values for each step of the animation in a list and delay100-1000 values. */
   /* For a value of 150ms, delay100 = 150ms, delay300 = 450ms and so on.  */
   /* Equation is: calc(var(--delay-step-amount) * var(--delay) */
