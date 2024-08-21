@@ -7,11 +7,10 @@
   --reanimate-on-scroll-by-default: 0;
   --default-animation-duration: 500ms; 
   --staggered-step-amount:250ms; 
-  --delay-step-amount: 250ms; 
+  --delay-step-amount: 400ms; 
   --blur-strength: 3px; 
   --translate-amount-x: 40%;
   --translate-amount-y: 40%;
-
 }
 @media(prefers-reduced-motion) {
   .animate.show {

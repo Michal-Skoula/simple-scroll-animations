@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Scroll Animations Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="code/animations.css">
+  <script defer src="code/animations.js"></script>
+</head>
+<body>
+  <div id="hero" class="section">
+    <h1 class="animate left-to-right fade-in">Simple Scroll animations</h1>
+    <p class="animate left-to-right fade-in">A simple showcase of what this library can do to help you add animations to your website.</p>
+    <small class="animate bottom-to-top staggered"><i>Scroll down or press the button</i></small>
+    <div class="animate bottom-to-top staggered">
+      <a href="#side-to-side-showcase" class="button">Take a look!</a>
+    </div>
+  </div>
+  <div id="side-to-side-showcase" class="section">
+    <h2 class="animate delay200">All cardinal directions!</h2>
+    <div class="flex-container">
+      <div class="block animate left-to-right"></div>
+      <div class="block animate top-to-bottom"></div>
+      <div class="block animate bottom-to-top"></div>
+      <div class="block animate right-to-left"></div>
+    </div>
+    <div class="animate fade-in delay300 column">
+      <a href="#cards-showcase" class="button">See more: Cards</a>
+      <a href="#hero">Go back</a>
+    </div>
+  </div>
+  <div id="cards-showcase" class="section">
+    <h2 class="animate delay200">Sick staggered cards with one class</h2>
+    <div class="flex-container">
+      <div class="block animate left-to-right staggered"></div>
+      <div class="block animate left-to-right staggered"></div>
+      <div class="block animate left-to-right staggered"></div>
+      <div class="block animate left-to-right staggered"></div>
+    </div>
+    <div class="animate fade-in delay400 column">
+      <a href=""></a>
+      <a href="#delay-showcase" class="button">See more: Setting a delay</a>
+      <a href="#side-to-side-showcase">Go back</a>
+    </div> 
+  </div>
+  <div id="delay-showcase" class="section">
+    <h2 class="animate">Easily set a delay</h2>
+    <div class="flex-container delay-grid">
+      <span class="animate delay100">You</span>
+      <span class="animate delay500">just</span>
+      <span class="animate delay300">set</span>
+      <span class="animate delay200">a</span>
+      <span class="animate delay700">value</span>
+      <span class="animate delay600">from</span>
+      <span class="animate delay900">100</span>
+      <span class="animate delay400">to</span>
+      <span class="animate delay1000">1000</span>
+    </div>
+    <div class="animate fade-in delay100 column">
+      <a href="#duration-showcase" class="button">See more: Setting a duration</a>
+      <a href="#cards-showcase">Go back</a>
+    </div> 
+  </div>
+  <div id="duration-showcase" class="section">
+    <h2 class="animate">Set an animation duration</h2>
+    <p>Your animation can be as <span class="animate bottom-to-top delay300 duration100">short</span> or as <span class="animate top-to-bottom delay400 duration1000">long</span> as you'd like</p>
+    <div class="animate fade-in delay100 column">
+      <a href="#installation" class="button">Installation</a>
+      <a href="#delay-showcase">Go back</a>
+    </div> 
+  </div>
+  <div id="installation" class="section">
+    <h2 class="animate left-to-right staggered">How do I add this to my website?</h2>
+    <p class="animate left-to-right staggered">Just copy the following code:</p>
+      <code class="animate left-to-right staggered">
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;code/animations.css&quot;&gt; <br> &lt;script defer src=&quot;code/animations.js&quot;&gt;&lt;/script&gt;
+      </code>
+    <p class="animate left-to-right staggered">Or read more in the README:</p>
+    <div class="animate bottom-to-top delay400">
+      <a href="https://github.com/Michal-Skoula/simple-scroll-animations" class="">Github Repo</a>
+    </div>
+
+
+    
+    <!-- <p>Your animation can be as <span class="animate bottom-to-top delay300 duration100">short</span> or as <span class="animate top-to-bottom delay400 duration1000">long</span> as you'd like</p> -->
+    <div class="animate fade-in delay100 column">
+      <a href="https://michal-skoula.github.io/simple-scroll-animations" class="button">View on a real site (my portfolio)</a>
+      <a href="#duration-showcase">Go back</a>
+    </div> 
+  </div>
+  
+  
+</body>
+</html>

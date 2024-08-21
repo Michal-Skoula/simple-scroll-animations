@@ -1,0 +1,160 @@
+:root:root {
+  --reanimate-on-scroll-by-default: 1;
+  --default-animation-duration: 500ms; 
+  --staggered-step-amount:250ms; 
+  --delay-step-amount: 250ms; 
+  --blur-strength: 3px; 
+  --translate-amount-x: 40%;
+  --translate-amount-y: 40%;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1e1e1e;
+  color:#f2f2f2;
+  display: grid;
+  width: 100vw;
+  max-width: 100%;
+  place-items: center;
+  min-height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+h2 {
+  margin-bottom: 64px;
+}
+p {
+  font-size: 20px;
+}
+code {
+  /* overflow:scroll; */
+  margin: 0 auto;
+}
+.column {
+  flex-direction: column;
+  display: flex;
+}
+a:not(.button) {
+  margin-top:16px;
+  color: grey;
+  text-decoration: none;
+  transition: text-decoration 150ms;
+}
+a:not(.button):hover {
+  text-decoration: underline;
+}
+#duration-showcase span:first-child {
+  font-size: 40px;
+  color: lemonchiffon;
+}
+#duration-showcase span:nth-child(2) {
+  font-size: 40px;
+  color: lightskyblue
+}
+.button {
+  padding: 16px 32px;
+  background-color: #f2f2f2;
+  color: #1e1e1e;
+  border-radius: 10px;
+  width: max-content;
+  text-align: center;
+  margin:64px auto 0 auto;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #f2f2f2;
+  transition: color 150ms, background-color 150ms;
+}
+.button:hover {
+  background-color: #1e1e1e;
+  color:#f2f2f2;
+}
+.hero, .section {
+  min-height: 100vh;
+  min-height: 100svh;
+  align-content: center;
+  display: grid;
+}
+.flex-container {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:32px;
+  justify-content: center;
+}
+.block {
+  width: 100px;
+  aspect-ratio: 1/1;
+  background-color:red;
+  border-radius: 10px;
+}
+.block:nth-child(1) {
+  background-color: lightblue;
+}
+.block:nth-child(2) {
+  background-color: lightcoral;
+}
+.block:nth-child(3) {
+  background-color: lightgreen;
+}
+.block:nth-child(4) {
+  background-color: lightseagreen;
+}
+.delay-grid {
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.delay-grid span {
+  font-size: 30px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.delay-grid span:nth-child(1) {
+  font-family: "Arial";
+  color: #AEC6CF; /* Light pastel blue */
+}
+.delay-grid span:nth-child(2) {
+  font-family: "Courier New";
+  color: #FFB7CE; /* Light pastel pink */
+}
+.delay-grid span:nth-child(3) {
+  font-family: "Georgia";
+  color: #CFCFC4; /* Light pastel gray */
+}
+.delay-grid span:nth-child(4) {
+  font-family: "Helvetica";
+  color: #FFD1DC; /* Light pastel peach */
+}
+.delay-grid span:nth-child(5) {
+  font-family: "Lucida Console";
+  color: #B4E7B8; /* Light pastel green */
+}
+.delay-grid span:nth-child(6) {
+  font-family: "Tahoma";
+  color: #FFDAC1; /* Light pastel orange */
+}
+.delay-grid span:nth-child(7) {
+  font-family: "Times New Roman";
+  color: #E2F0CB; /* Light pastel lime */
+}
+.delay-grid span:nth-child(8) {
+  font-family: "Trebuchet MS";
+  color: #F3E9D2; /* Light pastel beige */
+}
+.delay-grid span:nth-child(9) {
+  font-family: "Verdana";
+  color: #C4DDED; /* Light pastel sky blue */
+}
+.delay-grid span:nth-child(10) {
+  font-family: "Comic Sans MS";
+  color: #F7D9C4; /* Light */
+}
