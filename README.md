@@ -1,5 +1,5 @@
 # Simple scroll animations
-![Showcase video](videos/showcase.gif)
+![Showcase video](assets/videos/showcase.gif)
 
 - 🌐 [Demo website](https://michal-skoula.github.io/simple-scroll-animations)
 - 🔗 [My WIP personal website using this library](https://michal-skoula.github.io/website)
@@ -107,7 +107,7 @@ If your element has animations and transitions on it already, this library may n
 
 ## 🌳 Examples
 ### Different directions
-![Directions](videos/directions.gif)
+![Directions](assets/videos/directions.gif)
 ``` HTML
 <h2 class="animate delay200">All cardinal directions!</h2>
 <div class="flex-container">
@@ -123,7 +123,7 @@ If your element has animations and transitions on it already, this library may n
 ```
 ---
 ### Staggered elements (cards or lists)
-![Staggered](videos/staggered.gif)
+![Staggered](assets/videos/staggered.gif)
 ``` HTML
 <h2 class="animate delay200">Sick staggered cards with one class</h2>
 <div class="flex-container">
@@ -140,7 +140,7 @@ If your element has animations and transitions on it already, this library may n
 ```
 ---
 ### Delayed animations
-![Delayed](videos/delay.gif)
+![Delayed](assets/videos/delay.gif)
 ``` HTML
 <h2 class="animate">Easily set a delay</h2>
 <div class="flex-container delay-grid">
@@ -161,7 +161,7 @@ If your element has animations and transitions on it already, this library may n
 ```
 ---
 ### Long and short animations
-![Duration](videos/duration.gif)
+![Duration](assets/videos/duration.gif)
 ``` HTML
 <h2 class="animate">Set an animation duration</h2>
 <p>Your animation can be as <span class="animate bottom-to-top delay300 duration100">short</span> or as <span class="animate top-to-bottom delay400 duration1000">long</span> as you'd like</p>
