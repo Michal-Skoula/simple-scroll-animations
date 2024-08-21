@@ -20,8 +20,8 @@ I made this for my personal website, as I really only needed simple animations a
 ### 1. Link CSS and JS in your project
 Add the following code in `<head>`:
 ``` HTML
-<link rel="stylesheet" src="">
-<script defer src="">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Michal-Skoula/simple-scroll-animations@master/release/latest/styles.css">
+<script defer src="https://cdn.jsdelivr.net/gh/Michal-Skoula/simple-scroll-animations@master/release/latest/script.js">
 ``` 
 ### 2. Add `animate` class to elements you want to animate
 ``` HTML
@@ -36,7 +36,7 @@ Add the following code in `<head>`:
 ### 4. Change settings to suit your preferences
 This library comes with a few settings to tweak to your liking, which you change by editing CSS variables inside the document `:root`. You can copy the following code inside your CSS should you want to change any values. **You do not need to change any of these values if you don't want to.**
 ``` CSS
-:root {
+:root:root {
   --reanimate-on-scroll-by-default: 0;
   --default-animation-duration: 500ms; 
   --staggered-step-amount:250ms; 
@@ -46,6 +46,8 @@ This library comes with a few settings to tweak to your liking, which you change
   --translate-amount-y: 40%;
 }
 ```  
+Note: In order to change these setting, use `:root:root` for a higher specificity than the default settings.
+
 A more detailed description of the available settings can be seen in **Configuration**.
 
 ## ⚙️ Configuration
