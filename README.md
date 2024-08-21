@@ -14,7 +14,6 @@ I made this for my personal website, as I really only needed simple animations a
 - Every setting fully customizable
 - Super simple to use, only need to remember a few classes
 - Mostly CSS only and utilizing the intersectionObserver API for applying the animations
-- Small bundle size of 3.2kB
 
 ## 🏗️ Installation
 ### 1. Link CSS and JS in your project
