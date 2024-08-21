@@ -34,7 +34,6 @@ Add the following code in `<head>`:
 This library comes with a few settings to tweak to your liking, which you change by editing CSS variables inside the document `:root`. You can copy the following code inside your CSS should you want to change any values. **You do not need to change any of these values if you don't want to.**
 ``` CSS
 :root {
-  /*  */
   --reanimate-on-scroll-by-default: 0;
   --default-animation-duration: 500ms; 
   --staggered-step-amount:250ms; 
