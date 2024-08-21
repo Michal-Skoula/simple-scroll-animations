@@ -1,8 +1,8 @@
 # Simple scroll animations
 ![Showcase video](showcase.gif)
 
- [🌐 Demo website](https://michal-skoula.github.io/simple-scroll-animations)
- [🔗 My WIP personal website using this library](https://michal-skoula.github.io/website)
+- 🌐 [Demo website](https://michal-skoula.github.io/simple-scroll-animations)
+- 🔗 [My WIP personal website using this library](https://michal-skoula.github.io/website)
 
 Tailwind inspired way to create simple scroll animations for your website. Extremely easy to use for someone who wants to spice up their website presentation. 
 
