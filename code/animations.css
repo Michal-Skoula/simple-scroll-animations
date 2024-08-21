@@ -4,13 +4,13 @@
  */
 
  :root {
-  --reanimate-on-scroll-by-default: 1;
+  --reanimate-on-scroll-by-default: 0;
   --default-animation-duration: 500ms; 
-  --default-animation-duration-step:200ms; 
-  --transition-delay-step: 150ms; 
+  --staggered-step-amount:250ms; 
+  --delay-step-amount: 250ms; 
   --blur-strength: 3px; 
-  --translate-amount-x: 60%;
-  --translate-amount-y: 50%;
+  --translate-amount-x: 40%;
+  --translate-amount-y: 40%;
 
 }
 @media(prefers-reduced-motion) {
@@ -29,7 +29,8 @@
     filter calc(var(--default-animation-duration) * 2/3);
 }
 
-.animate.show {
+.animate.show,
+.animate.show.fade-in {
   opacity: 1;
   filter: blur(0);
 }
@@ -38,11 +39,9 @@
   opacity: 0;
   filter: blur(var(--blur-strength));
 }
-.animate.show.fade-in {
-  opacity: 1;
-  filter: blur(0);
+.noblur {
+  filter: blur(0) !important;
 }
-
 .animate.bottom-to-top {
   transform: translateY(var(--translate-amount-y));
 }
@@ -73,19 +72,19 @@
 
 
 .animate.staggered {
-  transition-delay: calc(var(--transition-delay-step) * var(--index));
+  transition-delay: calc(var(--delay-step-amount) * var(--index));
 }
 .animate.delay100, .animate.delay200, .animate.delay300, 
 .animate.delay400, .animate.delay500, .animate.delay600, 
 .animate.delay700, .animate.delay800, .animate.delay900, 
 .animate.delay1000 {
-  transition-delay: calc(var(--transition-delay-step) * var(--delay));
+  transition-delay: calc(var(--delay-step-amount) * var(--delay));
 }
 .animate.duration100, .animate.duration200, .animate.duration300, 
 .animate.duration400, .animate.duration500, .animate.duration600, 
 .animate.duration700, .animate.duration800, .animate.duration900, 
 .animate.duration1000 {
-  transition-duration: calc(var(--default-animation-duration-step) * var(--duration));
+  transition-duration: calc(var(--staggered-step-amount) * var(--duration));
 }
 
 .animate.staggered:nth-child(2) { --index: 1; }
@@ -119,5 +118,3 @@
 .animate.duration800  { --duration: 8; }
 .animate.duration900  { --duration: 9; }
 .animate.duration1000 { --duration: 10; }
-
-
