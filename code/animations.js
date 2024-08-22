@@ -21,6 +21,4 @@ const observer = new IntersectionObserver((entries) => {
 
 
 const toBeAnimated = document.querySelectorAll('.animate');
-setTimeout(() => {
-  toBeAnimated.forEach((element) => {observer.observe(element)});
-}, 400);
+toBeAnimated.forEach((element) => {observer.observe(element)});
