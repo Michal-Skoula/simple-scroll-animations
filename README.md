@@ -3,6 +3,7 @@
 
 - 🌐 [Demo website](https://michal-skoula.github.io/simple-scroll-animations)
 - 🔗 [My WIP personal website using this library](https://michal-skoula.github.io/website)
+- 🗃️ [Product Hunt](https://www.producthunt.com/posts/scroll-animations-css-library)
 
 Tailwind inspired way to create simple scroll animations for your website. Extremely easy to use for someone who wants to spice up their website presentation. 
 
